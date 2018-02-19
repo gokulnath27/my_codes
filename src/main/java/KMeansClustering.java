@@ -56,12 +56,14 @@ public class KMeansClustering {
 
         System.out.println("\nFinal cluster 1 :\n");
         for (i = 0; i < cluster1.length; i++) {
+            if(cluster1[i] != 0)
             System.out.print(cluster1[i] + "\t");
         }
 
         System.out.println();
         System.out.println("Final cluster 2 :\n");
         for (i = 0; i < cluster2.length; i++) {
+            if(cluster2[i] != 0)
             System.out.print(cluster2[i] + "\t");
 
         }

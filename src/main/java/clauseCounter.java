@@ -6,8 +6,7 @@ import edu.stanford.nlp.process.Tokenizer;
 import edu.stanford.nlp.process.TokenizerFactory;
 import edu.stanford.nlp.trees.*;
 
-import java.io.PrintWriter;
-import java.io.StringReader;
+import java.io.*;
 import java.util.List;
 
 class clauseCounter {
@@ -28,21 +27,26 @@ class clauseCounter {
     public static void demoAPI(LexicalizedParser lp) throws Exception {
 
         Tree parse;
-        String sent2 = "abc cite the fact that chemical additive be ban in many country and feel they may be ban in this state too. " +
-                "She cried because her seashell was broken." +
-                " Whoever ate the last piece of pie owes me!." +
-                " The bag that someone left on the bus belongs to Mrs. Smith.";
+        File file = new File("/Users/gokul-pt1831/Downloads/Football.txt");
+        FileReader fileReader = new FileReader(file);
+        BufferedReader bufferedReader = new BufferedReader(fileReader);
+        StringBuilder builder = new StringBuilder();
+        String line;
+        while ((line = bufferedReader.readLine()) != null){
+            builder.append(line);
+
+        }
         TokenizerFactory<CoreLabel> tokenizerFactory =
                 PTBTokenizer.factory(new CoreLabelTokenFactory(), "");
 
-        Tokenizer<CoreLabel> tokenizer = tokenizerFactory.getTokenizer(new StringReader(sent2));
+        Tokenizer<CoreLabel> tokenizer = tokenizerFactory.getTokenizer(new StringReader(builder.toString()));
         List<CoreLabel> rawWords2 = tokenizer.tokenize();
         parse = lp.apply(rawWords2);
         TreebankLanguagePack tlp = new PennTreebankLanguagePack();
         GrammaticalStructureFactory gsf = tlp.grammaticalStructureFactory();
         GrammaticalStructure gs = gsf.newGrammaticalStructure(parse);
         TreePrint tp = new TreePrint("penn");
-        PrintWriter pw = new PrintWriter(sent2);
+        PrintWriter pw = new PrintWriter(builder.toString());
         System.out.println(parse.pennString());
         String s = parse.pennString();
         String substring1 = "(SBAR";
@@ -53,16 +57,13 @@ class clauseCounter {
             idx++;
             count1++;
         }
-        System.out.println(count1);
         idx = 0;
         while ((idx = s.indexOf(substring2, idx)) != -1) {
             idx++;
             count2++;
         }
-        System.out.println(count2);
+        System.out.println("Total number of clauses:" + count2);
         System.out.println("No of SBAR(subordinate clause):"+count1);
         System.out.println("No of S(simple declarative clause):"+ (count2-count1));
-
-
     }
 }

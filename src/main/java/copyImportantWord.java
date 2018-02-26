@@ -12,7 +12,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Properties;
 
-public class importantWordDetector <C extends ArrayCoreMap> {
+public class copyImportantWord <C extends ArrayCoreMap> {
     public static void main(String[] args) throws IOException {
 
         Properties props = new Properties();
@@ -48,19 +48,9 @@ public class importantWordDetector <C extends ArrayCoreMap> {
                     else{
                         flag1 = 0;
                     }
-
-                    if(flag1 == 0){
-                        if(words.equals("")){
-                            continue;
-                        }
-                        else {
-                            search.searchResult(words);
-                            words = "";
-                        }
-                    }
                 }
 
-                if(flag1 == 1){
+                if(flag1 == 0){
                     if(words.equals("")){
                         continue;
                     }
@@ -70,6 +60,16 @@ public class importantWordDetector <C extends ArrayCoreMap> {
                     }
                 }
             }
+            if(flag1 == 1){
+                if(words.equals("")){
+                    continue;
+                }
+                else {
+                    search.searchResult(words);
+                    words = "";
+                }
+            }
+
         }
     }
 }

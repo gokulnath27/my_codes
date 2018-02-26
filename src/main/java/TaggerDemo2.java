@@ -101,7 +101,7 @@ class TaggerDemo2 {
             idx++;
             count1++;
         }
-        System.out.println(count1);
+        //System.out.println(count1);
 
 
 
@@ -111,11 +111,12 @@ class TaggerDemo2 {
             idx++;
             count2++;
         }
-        System.out.println(count2);
+        //System.out.println(count2);
 
 
-        System.out.println("No of SBAR(subordinate clause):"+count1);
-        System.out.println("No of S(simple declarative clause):"+ (count2-count1));
+        System.out.println("No of SBAR(subordinate clause):" + count1);
+        System.out.println("No of S(simple declarative clause):" + (count2-count1));
+        System.out.println("total number of clauses:" + count2);
 
 
     }

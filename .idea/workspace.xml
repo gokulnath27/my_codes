@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b546e392-ab52-40e4-918a-10dcbdc8dc39" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ConnectionTry.java" afterPath="$PROJECT_DIR$/src/main/java/ConnectionTry.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TaggerDemo2.java" afterPath="$PROJECT_DIR$/src/main/java/TaggerDemo2.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/clauseCounter.java" afterPath="$PROJECT_DIR$/src/main/java/clauseCounter.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/copyImportantWord.java" afterPath="$PROJECT_DIR$/src/main/java/copyImportantWord.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/googleSearch.java" afterPath="$PROJECT_DIR$/src/main/java/googleSearch.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/importantWordDetector.java" afterPath="$PROJECT_DIR$/src/main/java/importantWordDetector.java" />
-      <change beforePath="$PROJECT_DIR$/target/classes/TaggerDemo2.class" afterPath="$PROJECT_DIR$/target/classes/TaggerDemo2.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/clauseCounter.class" afterPath="$PROJECT_DIR$/target/classes/clauseCounter.class" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -53,8 +49,8 @@
       <file leaf-file-name="importantWordDetector.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/importantWordDetector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28">
-              <caret line="46" column="21" lean-forward="true" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
+            <state relative-caret-position="565">
+              <caret line="65" column="48" lean-forward="false" selection-start-line="65" selection-start-column="48" selection-end-line="65" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -65,8 +61,20 @@
       <file leaf-file-name="googleSearch.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/googleSearch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="9" column="83" lean-forward="false" selection-start-line="9" selection-start-column="83" selection-end-line="9" selection-end-column="83" />
+            <state relative-caret-position="414">
+              <caret line="32" column="12" lean-forward="false" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="copyImportantWord.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/copyImportantWord.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="31" lean-forward="false" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -128,18 +136,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="syllableCounter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/syllableCounter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="59" lean-forward="false" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -176,12 +172,12 @@
         <option value="$PROJECT_DIR$/src/main/java/tfidf.java" />
         <option value="$PROJECT_DIR$/src/main/java/countingSyllabless.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/googleSearch.java" />
         <option value="$PROJECT_DIR$/src/main/java/syllableCounter.java" />
         <option value="$PROJECT_DIR$/src/main/java/Tokenizer.java" />
         <option value="$PROJECT_DIR$/src/main/java/TaggerDemo2.java" />
         <option value="$PROJECT_DIR$/src/main/java/clauseCounter.java" />
         <option value="$PROJECT_DIR$/src/main/java/ConnectionTry.java" />
+        <option value="$PROJECT_DIR$/src/main/java/googleSearch.java" />
         <option value="$PROJECT_DIR$/src/main/java/copyImportantWord.java" />
         <option value="$PROJECT_DIR$/src/main/java/importantWordDetector.java" />
       </list>
@@ -515,7 +511,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="947" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -525,7 +520,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31428573" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31428573" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -846,6 +841,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-347">
           <caret line="20" column="30" lean-forward="false" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -949,16 +947,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/copyImportantWord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-452">
-          <caret line="14" column="30" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ConnectionTry.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="523">
@@ -969,8 +957,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/googleSearch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="9" column="83" lean-forward="false" selection-start-line="9" selection-start-column="83" selection-end-line="9" selection-end-column="83" />
+        <state relative-caret-position="414">
+          <caret line="32" column="12" lean-forward="false" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/copyImportantWord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="31" lean-forward="false" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -979,8 +977,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/importantWordDetector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="46" column="21" lean-forward="true" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
+        <state relative-caret-position="565">
+          <caret line="65" column="48" lean-forward="false" selection-start-line="65" selection-start-column="48" selection-end-line="65" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

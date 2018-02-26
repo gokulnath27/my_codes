@@ -13,12 +13,13 @@ public class googleSearch {
         //System.out.println("Please enter the search term.");
         String searchTerm = word;
         //System.out.println("Please enter the number of results. Example: 5 10 20");
-        int num = 3;
+        int num = 1;
 
 
         String searchURL = GOOGLE_SEARCH_URL + "?q=" + searchTerm + "&num=" + num;
         //without proper User-Agent, we will get 403 error
         Document doc = Jsoup.connect(searchURL).userAgent("Mozilla/5.0").get();
+
 
         //below will print HTML data, save it to a file and open in browser to compare
         //System.out.println(doc.html());
@@ -26,7 +27,6 @@ public class googleSearch {
         //If google search results HTML change the <h3 class="r" to <h3 class="r1"
         //we need to change below accordingly
         Elements results = doc.select("h3.r > a");
-
         for (Element result : results) {
             String linkHref = result.attr("href");
             String linkText = result.text();
